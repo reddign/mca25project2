@@ -24,14 +24,13 @@ function mover($playersMove) {
     $endY = [substr($playersMove[1],1,1)];
 
     print_r($initialX);
-    print_r($initialY);
     print("<br>");
 
 }
 
 function changeintonumber($inputLetter){
     if ($inputLetter == "a"){
-        
+        return "1";
     }
 }
 
