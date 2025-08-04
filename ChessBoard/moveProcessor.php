@@ -14,14 +14,14 @@ $playerMove = ["a2","a4"];
 mover($playerMove);
 
 function mover($playersMove) {
-    $initialX = [substr($playersMove[0],0,1)];
-    $initialY = [substr($playersMove[0],1,1)];
-    
-    $initialX = changeintonumber($initialX);
-    $initialX = changeintonumber($initialY);
+    $initialX = substr($playersMove[0],0,1);
+    $initialY = substr($playersMove[0],1,1);
 
-    $endX = [substr($playersMove[1],0,1)];
-    $endY = [substr($playersMove[1],1,1)];
+    $endX = substr($playersMove[1],0,1);
+    $endY = substr($playersMove[1],1,1);
+
+    $initialX = changeintonumber($initialX);
+    $endX = changeintonumber($endX);
 
     print_r($initialX);
     print("<br>");
