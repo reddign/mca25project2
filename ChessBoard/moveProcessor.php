@@ -25,12 +25,32 @@ function mover($playersMove) {
 
     print_r($initialX);
     print("<br>");
+    print_r($initialY);
+    print("<br>");
+    print_r($endX);
+    print("<br>");
+    print_r($endY);
+    print("<br>");
 
 }
 
 function changeintonumber($inputLetter){
     if ($inputLetter == "a"){
         return "1";
+    } else if ($inputLetter == "b"){
+        return "2";
+    } else if ($inputLetter == "c"){
+        return "3";
+    } else if ($inputLetter == "d"){
+        return "4";
+    } else if ($inputLetter == "e"){
+        return "5";
+    } else if ($inputLetter == "f"){
+        return "6";
+    } else if ($inputLetter == "g"){
+        return "7";
+    } else if ($inputLetter == "h"){
+        return "8";
     }
 }
 
