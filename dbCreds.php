@@ -9,5 +9,5 @@
 
     //Use line 
     // require "../dbcreds.php"; 
-    //To access this code snippet
+    //To access this code snippet.
 ?>
