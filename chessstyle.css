@@ -1,0 +1,33 @@
+h1 {
+
+
+
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif' 
+}
+
+
+th{
+    background-color:white;
+
+    border-color: black;
+    text-align:center;
+}
+
+td{
+    background-color:white;
+    border: 1px;
+    border-color: black;
+    text-align:center;
+}
+tr{
+    background-color:white;
+    border: 1px;
+    border-color: black;
+}
+
+table {
+    border: 3px solid #000000;
+    padding: 10px;
+    margin:auto;
+}
