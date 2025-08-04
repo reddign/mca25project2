@@ -6,4 +6,8 @@
     $password = "435Imn4}";
     $database = "u121755072_groff1db";
 
+
+    //Use line 
+    // require "../dbcreds.php"; 
+    //To access this code snippet
 ?>
