@@ -3,8 +3,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiplayer Chess</title>
-    <link href="chessstyle.css" rel="stylesheet">
+    <title>testing chess</title>
     <?php
 
     include "includes/header.php";
@@ -18,6 +17,7 @@
 
     }
     ?>
+    <link href="chessstyle.css" rel="stylesheet">
 </head>
 <body style="background-color: blanchedalmond;">
     <br><br><br>
@@ -28,7 +28,7 @@
 <!-- add the 5 lobbies' buttons !-->
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
     <table>
         <h1>Leaderboard</h1>
             <tr><th>Username</th><th>Wins</th></tr>
