@@ -1,7 +1,3 @@
-<?php
-header("location:processes/index.php")
-?>
-
 <html lang="en">
 <head>
     
@@ -14,6 +10,13 @@ header("location:processes/index.php")
     include "includes/header.php";
     include "includes/navbar.php";
     
+    session_start();
+    if($_SESSION["LoggedIn"] != "YES"){
+        eader("location:processes/index.php");
+        exit;
+    }else{
+
+    }
     ?>
 </head>
 <body style="background-color: blanchedalmond;">
