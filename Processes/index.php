@@ -6,7 +6,7 @@
         <script src="login.js" rel="javascript"></script>
         <script src="register.js" rel="javascript"></script>
     </head>
-    <link href="../chessstyle.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <body>
         <div class="container">
             <form id="login_form" method="post" action="login.php">
@@ -17,7 +17,7 @@
                 <button onclick="login(event);">Login</button>
             </form> <br><br><br><br><br>
 
-            <form id="sign_up_form" method="post" action="processes/sign_up.php">
+            <form id="sign_up_form" method="post" action="register.php">
                 <label for="first_name"><b>Sign Up: Enter your first name</b><br><br>
                 <br>- Make sure to capitalize the first letter of your name<br></label>
                 <input type="text" placeholder="Enter first name" id="first_name" name="first_name"> <br><br><br>
