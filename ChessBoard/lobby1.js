@@ -3,14 +3,14 @@ let graphics = canvas.getContext("2d")
 
 
 let currentBoardState=[
-    ["wr","wn","wb","wq","wk","wb","wk","wr"],
+    ["wr","wn","wb","wq","wk","wb","wn","wr"],
     ["wp","wp","wp","wp","wp","wp","wp","wp"],
     ["0","0","0","0","0","0","0","0"],
     ["0","0","0","0","0","0","0","0"],
     ["0","0","0","0","0","0","0","0"],
     ["0","0","0","0","0","0","0","0"],
     ["bp","bp","bp","bp","bp","bp","bp","bp"],
-    ["br","bn","bb","bq","bk","bb","bk","br"]
+    ["br","bn","bb","bq","bk","bb","bn","br"]
 ];
 
 
