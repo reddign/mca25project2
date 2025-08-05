@@ -16,18 +16,18 @@
 
     <br>
     <button onclick="displayPieces(event)">Start Game</button>
-    <img style="height: 0px" src="chessImages/wPawn.png" id="whitePawn">
-    <img style="height: 0px" src="chessImages/bPawn.png" id="blackPawn">
-    <img style="height: 0px" src="chessImages/wBishop.png" id="whiteBishop">
-    <img style="height: 0px" src="chessImages/bBishop.png" id="blackBishop">
-    <img style="height: 0px" src="chessImages/wKnight.png" id="whiteKnight">
-    <img style="height: 0px" src="chessImages/bKnight.png" id="blackKnight">
-    <img style="height: 0px" src="chessImages/wRook.png" id="whiteRook">
-    <img style="height: 0px" src="chessImages/bRook.png" id="blackRook">
-    <img style="height: 0px" src="chessImages/wQueen.png" id="whiteQueen">
-    <img style="height: 0px" src="chessImages/bQueen.png" id="blackQueen">
-    <img style="height: 0px" src="chessImages/wKing.png" id="whiteKing">
-    <img style="height: 0px" src="chessImages/bKing.png" id="blackKing">
+    <img style="height: 0px" src="../chessImages/wPawn.png" id="whitePawn">
+    <img style="height: 0px" src="../chessImages/bPawn.png" id="blackPawn">
+    <img style="height: 0px" src="../chessImages/wBishop.png" id="whiteBishop">
+    <img style="height: 0px" src="../chessImages/bBishop.png" id="blackBishop">
+    <img style="height: 0px" src="../chessImages/wKnight.png" id="whiteKnight">
+    <img style="height: 0px" src="../chessImages/bKnight.png" id="blackKnight">
+    <img style="height: 0px" src="../chessImages/wRook.png" id="whiteRook">
+    <img style="height: 0px" src="../chessImages/bRook.png" id="blackRook">
+    <img style="height: 0px" src="../chessImages/wQueen.png" id="whiteQueen">
+    <img style="height: 0px" src="../chessImages/bQueen.png" id="blackQueen">
+    <img style="height: 0px" src="../chessImages/wKing.png" id="whiteKing">
+    <img style="height: 0px" src="../chessImages/bKing.png" id="blackKing">
 
 
     <script src = "lobby1.js"></script>
