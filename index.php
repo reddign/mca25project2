@@ -1,3 +1,7 @@
+<?php
+header("location:processes/index.php")
+?>
+
 <html lang="en">
 <head>
     

@@ -6,7 +6,7 @@
         <script src="login.js" rel="javascript"></script>
         <script src="register.js" rel="javascript"></script>
     </head>
-    <link href="login.css" rel="stylesheet">
+    <link href="../chessstyle.css" rel="stylesheet">
     <body>
         <div class="container">
             <form id="login_form" method="post" action="login.php">

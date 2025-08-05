@@ -10,7 +10,7 @@ WHERE username='{$username}'
 and password=MD5('{$password}');";
 
 if($_SERVER['HTTP_HOST']=="127.0.0.1"){
-    $mysqli = new mysqli("195.35.59.14","u121755072_groff1","435Imn4}","u121755072_groff1db");
+    $mysqli = new mysqli("195.35.59.14","u121755072_chess","Mu4[XM@[D6&d","u121755072_chessdb");
 }
 
 if($mysqli->connect_errno){
