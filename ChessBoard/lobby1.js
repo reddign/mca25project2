@@ -15,6 +15,7 @@ let wKingImg = document.getElementById("whiteKing")
 let bKingImg = document.getElementById("blackKing")
 
 
+
 drawBoard()
 
 
@@ -104,6 +105,11 @@ function selectPiece(event){
         moveToSquare = getChessCoordinates(x, y)
         sendInfo[1] = moveToSquare
         console.log(sendInfo)
+
+        document.getElementById("jsVar1").value = sendInfo[0];
+        document.getElementById("jsVar2").value = sendInfo[1];
+
+        document.getElementById('myForm').submit();
 
     } else{
 

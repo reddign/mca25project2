@@ -9,6 +9,11 @@ $currentBoardState=[
     ["bp","bp","bp","bp","bp","bp","bp","bp"], //row 6
     ["br","bn","bb","bq","bk","bb","bn","br"]]; //row 7
 
+// Use this to determine $playerMove. You can change the $var1 and $var2 names if you want
+$var1 = $_POST['startPos'];
+$var2 = $_POST['endPos'];
+
+
 $playerMove = ["e7","e5"];
 
 mover($currentBoardState,$playerMove);

@@ -32,5 +32,12 @@
 
     <script src = "lobby1.js"></script>
 
+    <form id="myForm" action="sendHere.php" method="post">
+        <input type="hidden" id="jsVar1" name="startPos">
+        <input type="hidden" id="jsVar2" name="endPos">
+    </form>
+
+    <script src = "lobby1.js"></script>
+
 </body>
 </html>
