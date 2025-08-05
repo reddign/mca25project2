@@ -3,7 +3,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testing chess</title>
+    <title>Multiplayer Chess</title>
     <link href="chessstyle.css" rel="stylesheet">
     <?php
 
