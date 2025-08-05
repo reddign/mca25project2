@@ -19,8 +19,7 @@ require "scoreboarddb.php";
 $mysqli = new mysqli($servername,$username,$password,$database);
                //make a SQL message
 $sql = "select * FROM scores
-JOIN users on (users.id=scores.userid)
-where game='pong';";
+JOIN users on (users.id=scores.id);
 
 //send SQL and get result
 $result = $mysqli -> query($sql);
