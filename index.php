@@ -11,7 +11,7 @@
     
     session_start();
     if($_SESSION["LoggedIn"] != "YES"){
-        eader("location:processes/index.php");
+        header("location:Processes/index.php");
         exit;
     }else{
 
