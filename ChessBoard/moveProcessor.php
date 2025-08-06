@@ -1,7 +1,7 @@
 <?php
 $currentBoardState=[
     ["wr","wn","wb","wq","wk","wb","wn","wr"], //row 0
-    ["0","wp","wp","0","wp","wp","wp","wp"], //row 1
+    ["wp","wp","wp","wp","wp","wp","wp","wp"], //row 1
     ["0","0","0","0","0","0","0","0"], //row 2
     ["0","0","0","0","0","0","0","0"], //row 3
     ["0","0","0","0","0","0","0","0"], //row 4
@@ -13,7 +13,7 @@ $currentBoardState=[
 // $var1 = $_POST['startPos'];
 // $var2 = $_POST['endPos'];
 // $playerMove = [$var1,$var2];
-$playerMove = ["a1","a8"];
+$playerMove = ["d1","d7"];
 
 mover($currentBoardState,$playerMove);
 
