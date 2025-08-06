@@ -22,7 +22,7 @@
 <?php
     session_start();
     if($_SESSION["LoggedIn"] != "YES"){
-        header("location:Processes/index.php");
+        header("location:loginregister/login.php");
         exit;
     }else{
 

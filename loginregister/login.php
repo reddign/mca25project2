@@ -15,6 +15,7 @@
                 <input type="password" placeholder="Enter your password" id="password" name="password"><br><br>
                 <button onclick="login(event);">Login</button>
             </form> <br><br><br><br><br>
+            <button onclick=link href="register.php">Register here</button>
         </div>
         <script>
             function login(event){
