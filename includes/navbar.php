@@ -3,7 +3,7 @@
 <div class="w3-top">
         <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
           <a href="index.php" class="w3-bar-item w3-button">Home</a>
-          <a href="../processes/logout.php" class="w3-bar-item w3-button">Log Out</a>
+          <a href="../Processes/logout.php" class="w3-bar-item w3-button">Log Out</a>
           <!-- Right-sided navbar links. Hide them on small screens -->
           <div class="w3-right w3-hide-small">
             <a href="../ChessBoard/lobby1.php" class="w3-bar-item w3-button">
