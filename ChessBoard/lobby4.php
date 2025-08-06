@@ -34,7 +34,7 @@
     <img style="height: 0px" src="../chessImages/bKing.png" id="blackKing">
 
 
-    <script src = "lobby1.js"></script>
+    <script src = "lobby.js"></script>
 
     <form id="myForm" action="sendHere.php" method="post">
         <input type="hidden" id="jsVar1" name="startPos">
