@@ -2,12 +2,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login Page to Play Chess</title>
+        <title>Sign Up</title>
         <link href="style.css" rel="stylesheet">
     </head>
     
 
-<form id="sign_up_form" method="post" action="../includes/register.php">
+<form id="sign_up_form" method="post" action="../Processes/register.php">
                 <label for="first_name"><b>Sign Up: Enter your first name</b><br><br>
                 <br>- Make sure to capitalize the first letter of your name<br></label>
                 <input type="text" placeholder="Enter first name" id="first_name" name="first_name"> <br><br><br>
