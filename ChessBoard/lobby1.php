@@ -1,4 +1,5 @@
 <?php
+include "../includes/navbar2.php"
 session_start();
 $_SESSION["lobby"] = "chessGame1";
 ?>
