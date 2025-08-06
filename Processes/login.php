@@ -29,7 +29,7 @@ if(count($rows)>0){
 }else{
     $_SESSION["LoggedIn"]="No";
     $_SESSION["UserID"]="";
-    header("location:index.php");
+    header("location:../loginregister/login.php");
 }
 exit;
 ?>
