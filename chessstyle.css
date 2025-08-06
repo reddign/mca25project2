@@ -1,8 +1,7 @@
-h1 {
-
-
-
+h1,h2 {
     text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif' 
 }
 
