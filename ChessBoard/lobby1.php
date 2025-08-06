@@ -1,4 +1,8 @@
 <?php
+session_start();
+$_SESSION["lobby"] = "chessGame1";
+?>
+<?php
 require "dbCreds.php";
 
 $mysqli = new mysqli($servername,$username,$password,$database);

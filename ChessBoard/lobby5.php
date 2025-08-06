@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION["lobby"] = "chessGame5";
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
