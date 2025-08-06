@@ -16,7 +16,7 @@ $currentBoardState=[
 // $playerMove = [$var1,$var2];
 $playerMove = ["b1","c3"];
 
-mover($currentBoardState,$playerMove);
+$isTheMoveLegal=mover($currentBoardState,$playerMove);
 
 function mover($currentBoardState,$playersMove) {
     $initialY = substr($playersMove[0],0,1);
@@ -58,6 +58,7 @@ function mover($currentBoardState,$playersMove) {
     else {
         $legalMove=false;
     }
+    return $legalMove;
 }
 
 function displayinator($initialY,$initialX,$endY,$endX,$pieceType,$team,$playersMove,$legalMove) {
