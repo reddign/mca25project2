@@ -13,7 +13,7 @@ $currentBoardState=[
 // $var1 = $_POST['startPos'];
 // $var2 = $_POST['endPos'];
 // $playerMove = [$var1,$var2];
-$playerMove = ["d1","d7"];
+$playerMove = ["d1","e1"];
 
 mover($currentBoardState,$playerMove);
 
@@ -47,6 +47,8 @@ function mover($currentBoardState,$playersMove) {
     $legalMove = rook($currentBoardState,$initialX,$initialY,$endX,$endY,$team);
     } else if ($pieceType=="wq"||$pieceType=="bq"){
     $legalMove = queen($currentBoardState,$initialX,$initialY,$endX,$endY,$team);
+    } else if ($pieceType=="wn"||$pieceType=="bn"){
+    $legalMove = knight($currentBoardState,$initialX,$initialY,$endX,$endY,$team);
     }
 
     displayinator($initialY,$initialX,$endY,$endX,$pieceType,$team,$playersMove,$legalMove);}
@@ -873,5 +875,81 @@ function  queen($currentBoardState,$X,$Y,$endX,$endY,$team) {
         $OtherPieceType = whatPieceWeMoving($currentBoardState,$X-1,$Y-1);$OtherPieceTeam = substr($OtherPieceType,0,1);
         if(($OtherPieceTeam!=$team) && (($X-1)==$endX) && (($Y-1)==$endY)){return true;}}}
     //this is the ending of the up left code   
+}
+
+function knight($currentBoardState,$X,$Y,$endX,$endY,$team){
+    //This is the beginning of the knight code
+    //x+2s
+    if(!(($X+2)>7 || ($Y-1)<0)){
+    if($currentBoardState[$X+2][$Y-1]=="0"){
+        if((($X+2)==$endX) && (($Y-1)==$endY)){
+        return true;} 
+    } else {
+        $OtherPieceType = whatPieceWeMoving($currentBoardState,$X+2,$Y-1);$OtherPieceTeam = substr($OtherPieceType,0,1);
+        if(($OtherPieceTeam!=$team) && (($X+2)==$endX) && (($Y-1)==$endY)){return true;}}
+    }
+
+    if(!(($X+2)>7 || ($Y+1)>7)){
+    if($currentBoardState[$X+2][$Y+1]=="0"){
+        if((($X+2)==$endX) && (($Y+1)==$endY)){
+        return true;} 
+    } else {
+        $OtherPieceType = whatPieceWeMoving($currentBoardState,$X+2,$Y+1);$OtherPieceTeam = substr($OtherPieceType,0,1);
+        if(($OtherPieceTeam!=$team) && (($X+2)==$endX) && (($Y+1)==$endY)){return true;}}
+    }
+    //x-2s
+    if(!(($X-2)<0 || ($Y-1)<0)){
+    if($currentBoardState[$X-2][$Y-1]=="0"){
+        if((($X-2)==$endX) && (($Y-1)==$endY)){
+        return true;} 
+    } else {
+        $OtherPieceType = whatPieceWeMoving($currentBoardState,$X-2,$Y-1);$OtherPieceTeam = substr($OtherPieceType,0,1);
+        if(($OtherPieceTeam!=$team) && (($X-2)==$endX) && (($Y-1)==$endY)){return true;}}
+    }
+
+    if(!(($X-2)<0 || ($Y+1)>7)){
+    if($currentBoardState[$X-2][$Y+1]=="0"){
+        if((($X-2)==$endX) && (($Y+1)==$endY)){
+        return true;} 
+    } else {
+        $OtherPieceType = whatPieceWeMoving($currentBoardState,$X-2,$Y+1);$OtherPieceTeam = substr($OtherPieceType,0,1);
+        if(($OtherPieceTeam!=$team) && (($X-2)==$endX) && (($Y+1)==$endY)){return true;}}
+    }
+    //y+2s
+    if(!(($X+1)>7 || ($Y+2)>7)){
+    if($currentBoardState[$X+1][$Y+2]=="0"){
+        if((($X+1)==$endX) && (($Y+2)==$endY)){
+        return true;} 
+    } else {
+        $OtherPieceType = whatPieceWeMoving($currentBoardState,$X+1,$Y+2);$OtherPieceTeam = substr($OtherPieceType,0,1);
+        if(($OtherPieceTeam!=$team) && (($X+1)==$endX) && (($Y+2)==$endY)){return true;}}
+    }
+
+    if(!(($X-1)<0 || ($Y+2)>7)){
+    if($currentBoardState[$X-1][$Y+2]=="0"){
+        if((($X-1)==$endX) && (($Y+2)==$endY)){
+        return true;} 
+    } else {
+        $OtherPieceType = whatPieceWeMoving($currentBoardState,$X-1,$Y+2);$OtherPieceTeam = substr($OtherPieceType,0,1);
+        if(($OtherPieceTeam!=$team) && (($X-1)==$endX) && (($Y+2)==$endY)){return true;}}
+    }
+    //y-2s
+    if(!(($X+1)>7 || ($Y-2)<0)){
+    if($currentBoardState[$X+1][$Y-2]=="0"){
+        if((($X+1)==$endX) && (($Y-2)==$endY)){
+        return true;} 
+    } else {
+        $OtherPieceType = whatPieceWeMoving($currentBoardState,$X+1,$Y-2);$OtherPieceTeam = substr($OtherPieceType,0,1);
+        if(($OtherPieceTeam!=$team) && (($X+1)==$endX) && (($Y-2)==$endY)){return true;}}
+    }
+
+    if(!(($X-1)<0 || ($Y-2)<0)){
+    if($currentBoardState[$X-1][$Y-2]=="0"){
+        if((($X-1)==$endX) && (($Y-2)==$endY)){
+        return true;} 
+    } else {
+        $OtherPieceType = whatPieceWeMoving($currentBoardState,$X-1,$Y-2);$OtherPieceTeam = substr($OtherPieceType,0,1);
+        if(($OtherPieceTeam!=$team) && (($X-1)==$endX) && (($Y-2)==$endY)){return true;}}
+    }
 }
 ?>
