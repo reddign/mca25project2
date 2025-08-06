@@ -13,9 +13,11 @@ $currentBoardState=[
 
 // Use this to determine $playerMove
 // I also need to get the current board state somehow.
-// $_SESSION['startPosition'] = $_POST['startPos'];
-// $_SESSION['endPosition'] = $_POST['endPos'];
-// $lobbyNumber = $_POST['lobby'];
+// $var1 = $_POST['startPos'];
+// $var2 = $_POST['endPos'];
+// $_SESSION['startPosition'] = $var1;
+// $_SESSION['endPosition'] = $var2;
+// $lobbyNumber = $_SESSION['lobby'];
 // $playerMove = [$var1,$var2];
 $playerMove = ["b1","c3"];
 
@@ -41,7 +43,7 @@ function mover($currentBoardState,$playersMove) {
     $initialX -= 1;
     $endX -= 1;
 
-    
+
 
     if(!($endX>7||$endX<0 || $endY>7||$endY<0 || $initialX>7||$initialX<0 || $initialY>7||$initialY<0)) {
     $pieceType = whatPieceWeMoving($currentBoardState,$initialX,$initialY);
