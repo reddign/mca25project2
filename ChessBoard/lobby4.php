@@ -41,7 +41,7 @@
         <input type="hidden" id="jsVar2" name="endPos">
     </form>
 
-    <script src = "lobby1.js"></script>
+    <script src = "lobby.js"></script>
 
 </body>
 </html>

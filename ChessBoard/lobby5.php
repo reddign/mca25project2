@@ -28,7 +28,7 @@
     <img style="height: 0px" src="../chessImages/wRook.png" id="whiteRook">
     <img style="height: 0px" src="../chessImages/bRook.png" id="blackRook">
     <img style="height: 0px" src="../chessImages/wQueen.png" id="whiteQueen">
-    <img style="height: 0px" src="../chessImages/bQueen.png" id="blackQueen">
+    <img style="height: 0px" src= "../chessImages/bQueen.png" id="blackQueen">
     <img style="height: 0px" src="../chessImages/wKing.png" id="whiteKing">
     <img style="height: 0px" src="../chessImages/bKing.png" id="blackKing">
 
@@ -40,7 +40,7 @@
         <input type="hidden" id="jsVar2" name="endPos">
     </form>
 
-    <script src = "lobby1.js"></script>
+    <script src = "lobby.js"></script>
 
 </body>
 </html>
