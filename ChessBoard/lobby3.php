@@ -7,7 +7,10 @@
 </head>
 <body>
     <p2>
-    <?php include "moveProcessor.php"; ?>
+    <?php include "moveProcessor.php"; 
+          include "../includes/header.php";
+          include "../includes/navbar2.php";
+    ?>
     </p2>
     
     <canvas style="border:2px solid #000000;background-color: grey; display: block; margin-left: auto; margin-right: auto;" width = "480;" height = "480;"
