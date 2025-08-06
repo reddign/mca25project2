@@ -13,13 +13,13 @@ $currentBoardState=[
 
 // Use this to determine $playerMove
 // I also need to get the current board state somehow.
-// $var1 = $_POST['startPos'];
-// $var2 = $_POST['endPos'];
-// $_SESSION['startPosition'] = $var1;
-// $_SESSION['endPosition'] = $var2;
-// $lobbyNumber = $_SESSION['lobby'];
-// $playerMove = [$var1,$var2];
-$playerMove = ["b1","c3"];
+$var1 = $_POST['startPos'];
+$var2 = $_POST['endPos'];
+$_SESSION['startPosition'] = $var1;
+$_SESSION['endPosition'] = $var2;
+$lobbyNumber = $_SESSION['lobby'];
+$playerMove = [$var1,$var2];
+// $playerMove = ["b1","c3"];
 
 $isTheMoveLegal=mover($currentBoardState,$playerMove);
 
