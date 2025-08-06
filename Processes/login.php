@@ -25,11 +25,11 @@ $rows = $result -> fetch_all(MYSQLI_ASSOC);
 if(count($rows)>0){
     $_SESSION["LoggedIn"]="YES";
     $_SESSION["UserID"]=$_POST["username"];
-    header("location:../navbar.php");
+    header("location:../index.php");
 }else{
     $_SESSION["LoggedIn"]="No";
     $_SESSION["UserID"]="";
-    header("location:index.htm");
+    header("location:index.php");
 }
 exit;
 ?>
