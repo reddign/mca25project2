@@ -1,3 +1,20 @@
+<?php
+require "dbCreds.php";
+
+$mysqli = new mysqli($servername,$username,$password,$database);
+
+$sqlboard = "select a as '0',b as '1',c as '2',d as '3',e as '4',f as '5',g as '6',h as '7' from chessGame1;";
+
+//Send SQL and get results
+$result = $mysqli -> query($sqlboard);
+$sqlresult = $result -> fetch_all(MYSQLI_ASSOC);
+
+$jsonBoard= json_encode($sqlresult);
+
+?>
+
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,6 +57,7 @@
         <input type="hidden" id="jsVar2" name="endPos">
     </form>
 
+    <script>   var jsBoard = <?php echo $jsonBoard; ?>;  </script>
     <script src = "lobby.js"></script>
 
 </body>

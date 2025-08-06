@@ -19,16 +19,17 @@ let bKingImg = document.getElementById("blackKing")
 drawBoard()
 
 
-let currentBoardState=[
-    ["wr","wn","wb","wq","wk","wb","wn","wr"],
-    ["wp","wp","wp","wp","wp","wp","wp","wp"],
-    ["0","0","0","0","0","0","0","0"],
-    ["0","0","0","0","0","0","0","0"],
-    ["0","0","0","0","0","0","0","0"],
-    ["0","0","0","0","0","0","0","0"],
-    ["bp","bp","bp","bp","bp","bp","bp","bp"],
-    ["br","bn","bb","bq","bk","bb","bn","br"]
-];
+let currentBoardState = jsBoard;
+// [
+//     ["wr","wn","wb","wq","wk","wb","wn","wr"],
+//     ["wp","wp","wp","wp","wp","wp","wp","wp"],
+//     ["0","0","0","0","0","0","0","0"],
+//     ["0","0","0","0","0","0","0","0"],
+//     ["0","0","0","0","0","0","0","0"],
+//     ["0","0","0","0","0","0","0","0"],
+//     ["bp","bp","bp","bp","bp","bp","bp","bp"],
+//     ["br","bn","bb","bq","bk","bb","bn","br"]
+// ];
 
 let currentDrawPiece = wPawnImg
 
