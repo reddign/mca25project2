@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $currentBoardState=[
     ["wr","wn","wb","wq","wk","wb","wn","wr"], //row 0
     ["wp","wp","wp","wp","wp","wp","wp","wp"], //row 1
@@ -13,10 +15,16 @@ $currentBoardState=[
 // I also need to get the current board state somehow.
 // $var1 = $_POST['startPos'];
 // $var2 = $_POST['endPos'];
+// $lobbyNumber = $_POST['lobby'];
 // $playerMove = [$var1,$var2];
 $playerMove = ["b1","c3"];
 
 $isTheMoveLegal=mover($currentBoardState,$playerMove);
+
+if ($isTheMoveLegal) {
+    //update board
+}
+//send them back to where they came from
 
 function mover($currentBoardState,$playersMove) {
     $initialY = substr($playersMove[0],0,1);
