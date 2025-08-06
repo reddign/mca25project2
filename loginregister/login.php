@@ -18,8 +18,8 @@
 
         </div>
         <div class="container">
-            <button onclick="clickRegister(event)">Register here</button>
-        </div>
+            <a href="register.php"><button>Register</button></a>        
+</div>
         <script>
             function login(event){
     event.preventDefault();
@@ -35,12 +35,6 @@
         // Submits to a PHP form
     }
 }
-            function clickRegister(event){
-                <?php
-                header("register.php")
-                ?>
-                <a href="register.php"></a>
-            }
         </script>
     </body>
 </html>
