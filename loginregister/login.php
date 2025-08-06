@@ -16,6 +16,8 @@
                 <button onclick="login(event);">Login</button>
             </form> 
 
+        </div>
+        <div class="container">
             <button onclick="clickRegister(event)">Register here</button>
         </div>
         <script>
