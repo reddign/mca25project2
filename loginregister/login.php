@@ -14,8 +14,9 @@
                 <label for="password"><b>Password:</b></label>
                 <input type="password" placeholder="Enter your password" id="password" name="password"><br><br>
                 <button onclick="login(event);">Login</button>
-            </form> <br><br><br><br><br>
-            <button onclick=link href="../loginregister/register.php">Register here</button>
+            </form> 
+
+            <button onclick="clickRegister(event)">Register here</button>
         </div>
         <script>
             function login(event){
@@ -32,6 +33,12 @@
         // Submits to a PHP form
     }
 }
+            function clickRegister(event){
+                <?php
+                header("register.php")
+                ?>
+                <a href="register.php"></a>
+            }
         </script>
     </body>
 </html>
