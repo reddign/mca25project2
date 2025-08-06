@@ -25,7 +25,7 @@ if($mysqli->connect_errno){
 $stmt = $mysqli->prepare($sql);
 $stmt->execute();
 
-header("location:index.php");
+header("location:../loginregister/login.php");
 exit;
 
 ?>
