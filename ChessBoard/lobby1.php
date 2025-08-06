@@ -24,7 +24,7 @@ $jsonBoard= json_encode($sqlresult);
 </head>
 <body>
     <p2>
-    <?php include "moveProcessor.php"; 
+    <?php
           include "../includes/header.php";
           include "../includes/navbar2.php";
     ?>
