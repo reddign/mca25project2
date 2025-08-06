@@ -11,13 +11,15 @@ $currentBoardState=[
     ["bp","bp","bp","bp","bp","bp","bp","bp"], //row 6
     ["br","bn","bb","bq","bk","bb","bn","br"]]; //row 7
 
-// Use this to determine $playerMove. You can change the $var1 and $var2 names if you want
+// Use this to determine $playerMove
 // I also need to get the current board state somehow.
-// $var1 = $_POST['startPos'];
-// $var2 = $_POST['endPos'];
-// $lobbyNumber = $_POST['lobby'];
-// $playerMove = [$var1,$var2];
-$playerMove = ["b1","c3"];
+$var1 = $_POST['startPos'];
+$var2 = $_POST['endPos'];
+$_SESSION['startPosition'] = $var1;
+$_SESSION['endPosition'] = $var2;
+$lobbyNumber = $_SESSION['lobby'];
+$playerMove = [$var1,$var2];
+// $playerMove = ["b1","c3"];
 
 $isTheMoveLegal=mover($currentBoardState,$playerMove);
 
@@ -41,7 +43,7 @@ function mover($currentBoardState,$playersMove) {
     $initialX -= 1;
     $endX -= 1;
 
-    
+
 
     if(!($endX>7||$endX<0 || $endY>7||$endY<0 || $initialX>7||$initialX<0 || $initialY>7||$initialY<0)) {
     $pieceType = whatPieceWeMoving($currentBoardState,$initialX,$initialY);

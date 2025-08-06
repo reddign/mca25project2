@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION["lobby"] = "chessGame4";
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +11,7 @@
 </head>
 <body>
     <p2>
-    <?php include "moveProcessor.php"; 
+    <?php
           include "../includes/header.php";
           include "../includes/navbar2.php";
           
@@ -34,14 +38,14 @@
     <img style="height: 0px" src="../chessImages/bKing.png" id="blackKing">
 
 
-    <script src = "lobby1.js"></script>
+    <script src = "lobby.js"></script>
 
     <form id="myForm" action="sendHere.php" method="post">
         <input type="hidden" id="jsVar1" name="startPos">
         <input type="hidden" id="jsVar2" name="endPos">
     </form>
 
-    <script src = "lobby1.js"></script>
+    <script src = "lobby.js"></script>
 
 </body>
 </html>

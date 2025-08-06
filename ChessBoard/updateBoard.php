@@ -1,9 +1,9 @@
 <?php
 require "../dbCreds.php";
 
-$chessGame = "chessGame1";//Pull current chess game lobby from somewhere?
-$piecePosition = "b1";//Get the position of the current piece
-$requestPosition = "a2";//Get the position of the requested move (both the above will be entered as like a2)
+$chessGame = $_SESSION["lobby"];//Pull current chess game lobby
+$piecePosition = $_SESSION["startPosition"];//Get the position of the current piece
+$requestPosition = $_SESSION["endPosition"];//Get the position of the requested move (both the above will be entered as like a2)
 $pieceCol = substr($piecePosition,0,1);
 $pieceRow = substr($piecePosition,1,1);
 $requestCol = substr($requestPosition,0,1);
