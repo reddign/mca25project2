@@ -35,7 +35,7 @@
 
     <script src = "lobby.js"></script>
 
-    <form id="myForm" action="sendHere.php" method="post">
+    <form id="myForm" action="moveProcessor.php" method="post">
         <input type="hidden" id="jsVar1" name="startPos">
         <input type="hidden" id="jsVar2" name="endPos">
     </form>
