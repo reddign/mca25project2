@@ -34,6 +34,19 @@ let currentBoardState = jsBoard;
 let currentDrawPiece = wPawnImg
 
 
+var img1 = false
+var img2 = false
+var img3 = false
+var img4 = false
+var img5 = false
+var img6 = false
+var img7 = false
+var img8 = false
+var img9 = false
+var img10 = false
+var img11 = false
+var img12 = false
+
 wPawnImg.onload = function() {
     img1 = true;
     checkIfImagesLoaded();
