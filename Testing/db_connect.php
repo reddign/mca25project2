@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "your_username";
-$password = "your_password";
-$dbname = "chess_lobby_db";
+$servername = "195.35.59.14";
+$username = "u121755072_chess";
+$password = "Mu4[XM@[D6&d";
+$dbname = "u121755072_chessdb";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
