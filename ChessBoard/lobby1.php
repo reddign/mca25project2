@@ -3,21 +3,6 @@ session_start();
 $_SESSION["game"] = "chessGame1";
 $_SESSION["lobby"] = "lobby1";
 ?>
-<?php
-require "../dbCreds.php";
-
-$mysqli = new mysqli($servername,$username,$password,$database);
-
-$sqlboard = "select a as '0',b as '1',c as '2',d as '3',e as '4',f as '5',g as '6',h as '7' from {$_SESSION['game']};";
-
-//Send SQL and get results
-$result = $mysqli -> query($sqlboard);
-$sqlresult = $result -> fetch_all(MYSQLI_ASSOC);
-
-$jsonBoard= json_encode($sqlresult);
-
-?>
-
 
 
 <html lang="en">
@@ -54,6 +39,22 @@ $jsonBoard= json_encode($sqlresult);
     <img style="height: 0px" src="../chessImages/bQueen.png" id="blackQueen" loading="lazy">
     <img style="height: 0px" src="../chessImages/wKing.png" id="whiteKing" loading="lazy">
     <img style="height: 0px" src="../chessImages/bKing.png" id="blackKing" loading="lazy">
+
+    
+<?php
+require "../dbCreds.php";
+
+$mysqli = new mysqli($servername,$username,$password,$database);
+
+$sqlboard = "select a as '0',b as '1',c as '2',d as '3',e as '4',f as '5',g as '6',h as '7' from {$_SESSION['game']};";
+
+//Send SQL and get results
+$result = $mysqli -> query($sqlboard);
+$sqlresult = $result -> fetch_all(MYSQLI_ASSOC);
+
+$jsonBoard= json_encode($sqlresult);
+
+?>
 
 
     <!-- a script called sendHere was being called as the action in one of the versions. I chose to get rid of it -->
