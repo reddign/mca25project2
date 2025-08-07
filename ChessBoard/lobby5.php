@@ -14,7 +14,7 @@ $_SESSION["lobby"] = "lobby5";
 <body>
     <style>
             body {
-                background-image: url('../chessImages/wood.jpg'); 
+                background-image: url('../chessImages/wood5.jpg'); 
                 background-repeat: no-repeat; 
                 background-size: cover; 
                 background-position: center; 
