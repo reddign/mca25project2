@@ -4,7 +4,7 @@ $_SESSION["game"] = "chessGame5";
 $_SESSION["lobby"] = "lobby5";
 ?>
 <?php
-require "dbCreds.php";
+require "../dbCreds.php";
 
 $mysqli = new mysqli($servername,$username,$password,$database);
 

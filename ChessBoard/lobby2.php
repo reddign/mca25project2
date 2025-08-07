@@ -4,17 +4,17 @@ $_SESSION["game"] = "chessGame2";
 $_SESSION["lobby"] = "lobby2";
 ?>
 <?php
-// require "dbCreds.php";
+require "../dbCreds.php";
 
-// $mysqli = new mysqli($servername,$username,$password,$database);
+$mysqli = new mysqli($servername,$username,$password,$database);
 
-// $sqlboard = "select a as '0',b as '1',c as '2',d as '3',e as '4',f as '5',g as '6',h as '7' from {$_SESSION['lobby']};";
+$sqlboard = "select a as '0',b as '1',c as '2',d as '3',e as '4',f as '5',g as '6',h as '7' from {$_SESSION['lobby']};";
 
-// //Send SQL and get results
-// $result = $mysqli -> query($sqlboard);
-// $sqlresult = $result -> fetch_all(MYSQLI_ASSOC);
+//Send SQL and get results
+$result = $mysqli -> query($sqlboard);
+$sqlresult = $result -> fetch_all(MYSQLI_ASSOC);
 
-// $jsonBoard= json_encode($sqlresult);
+$jsonBoard= json_encode($sqlresult);
 ?>
 
 <html lang="en">
