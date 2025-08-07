@@ -27,7 +27,8 @@ $jsonBoard= json_encode($sqlresult);
     
 </head>
 <body>
-    <p2>
+    <p2>    
+        <!-- I had to get rid of move processor being called here. I don't think it was neccessary -->
     <?php
           include "../includes/header.php";
           include "../includes/navbar2.php";
@@ -53,14 +54,14 @@ $jsonBoard= json_encode($sqlresult);
     <img style="height: 0px" src="../chessImages/wKing.png" id="whiteKing">
     <img style="height: 0px" src="../chessImages/bKing.png" id="blackKing">
 
-
+    <!-- why is lobby.js ran multiple times? -->
     <script src = "lobby.js"></script>
-
+    <!-- a script called sendHere was being called as the action in one of the versions. I chose to get rid of it -->
     <form id="myForm" action="moveProcessor.php" method="post">
         <input type="hidden" id="jsVar1" name="startPos">
         <input type="hidden" id="jsVar2" name="endPos">
     </form>
-
+    <!-- I don't know what jsBoard is, but I kept it -->
     <script>   var jsBoard = <?php echo $jsonBoard; ?>;  </script>
     <script src = "lobby.js"></script>
 
