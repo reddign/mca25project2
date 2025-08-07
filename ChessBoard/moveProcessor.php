@@ -1,15 +1,24 @@
 <?php
 session_start();
 
-$currentBoardState=[
-    ["wr","wn","wb","wq","wk","wb","wn","wr"], //row 0
-    ["wp","wp","wp","wp","wp","wp","wp","wp"], //row 1
-    ["0","0","0","0","0","0","0","0"], //row 2
-    ["0","0","0","0","0","0","0","0"], //row 3
-    ["0","0","0","0","0","0","0","0"], //row 4
-    ["0","0","0","0","0","0","0","0"], //row 5
-    ["bp","bp","bp","bp","bp","bp","bp","bp"], //row 6
-    ["br","bn","bb","bq","bk","bb","bn","br"]]; //row 7
+
+$mysqli = new mysqli($servername,$username,$password,$database);
+
+$sqlboard = "select a as '0',b as '1',c as '2',d as '3',e as '4',f as '5',g as '6',h as '7' from {$_SESSION['game']};";
+
+//Send SQL and get results
+$result = $mysqli -> query($sqlboard);
+$currentBoardState = $result -> fetch_all(MYSQLI_ASSOC);
+
+// $currentBoardState=[
+//     ["wr","wn","wb","wq","wk","wb","wn","wr"], //row 0
+//     ["wp","wp","wp","wp","wp","wp","wp","wp"], //row 1
+//     ["0","0","0","0","0","0","0","0"], //row 2
+//     ["0","0","0","0","0","0","0","0"], //row 3
+//     ["0","0","0","0","0","0","0","0"], //row 4
+//     ["0","0","0","0","0","0","0","0"], //row 5
+//     ["bp","bp","bp","bp","bp","bp","bp","bp"], //row 6
+//     ["br","bn","bb","bq","bk","bb","bn","br"]]; //row 7
 
 // Use this to determine $playerMove
 // I also need to get the current board state somehow.
