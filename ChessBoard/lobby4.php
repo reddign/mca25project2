@@ -8,7 +8,7 @@ require "../dbCreds.php";
 
 $mysqli = new mysqli($servername,$username,$password,$database);
 
-$sqlboard = "select a as '0',b as '1',c as '2',d as '3',e as '4',f as '5',g as '6',h as '7' from {$_SESSION['lobby']};";
+$sqlboard = "select a as '0',b as '1',c as '2',d as '3',e as '4',f as '5',g as '6',h as '7' from {$_SESSION['game']};";
 
 //Send SQL and get results
 $result = $mysqli -> query($sqlboard);
