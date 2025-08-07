@@ -42,18 +42,18 @@ $jsonBoard= json_encode($sqlresult);
 
     <br>
     <button onclick="displayPieces(event)">Start Game</button>
-    <img style="height: 0px" src="../chessImages/wPawn.png" id="whitePawn">
-    <img style="height: 0px" src="../chessImages/bPawn.png" id="blackPawn">
-    <img style="height: 0px" src="../chessImages/wBishop.png" id="whiteBishop">
-    <img style="height: 0px" src="../chessImages/bBishop.png" id="blackBishop">
-    <img style="height: 0px" src="../chessImages/wKnight.png" id="whiteKnight">
-    <img style="height: 0px" src="../chessImages/bKnight.png" id="blackKnight">
-    <img style="height: 0px" src="../chessImages/wRook.png" id="whiteRook">
-    <img style="height: 0px" src="../chessImages/bRook.png" id="blackRook">
-    <img style="height: 0px" src="../chessImages/wQueen.png" id="whiteQueen">
-    <img style="height: 0px" src="../chessImages/bQueen.png" id="blackQueen">
-    <img style="height: 0px" src="../chessImages/wKing.png" id="whiteKing">
-    <img style="height: 0px" src="../chessImages/bKing.png" id="blackKing">
+    <img style="height: 0px" src="../chessImages/wPawn.png" id="whitePawn" loading="lazy">
+    <img style="height: 0px" src="../chessImages/bPawn.png" id="blackPawn" loading="lazy">
+    <img style="height: 0px" src="../chessImages/wBishop.png" id="whiteBishop" loading="lazy">
+    <img style="height: 0px" src="../chessImages/bBishop.png" id="blackBishop" loading="lazy">
+    <img style="height: 0px" src="../chessImages/wKnight.png" id="whiteKnight" loading="lazy">
+    <img style="height: 0px" src="../chessImages/bKnight.png" id="blackKnight" loading="lazy">
+    <img style="height: 0px" src="../chessImages/wRook.png" id="whiteRook" loading="lazy">
+    <img style="height: 0px" src="../chessImages/bRook.png" id="blackRook" loading="lazy">
+    <img style="height: 0px" src="../chessImages/wQueen.png" id="whiteQueen" loading="lazy">
+    <img style="height: 0px" src="../chessImages/bQueen.png" id="blackQueen" loading="lazy">
+    <img style="height: 0px" src="../chessImages/wKing.png" id="whiteKing" loading="lazy">
+    <img style="height: 0px" src="../chessImages/bKing.png" id="blackKing" loading="lazy">
 
 
     <!-- a script called sendHere was being called as the action in one of the versions. I chose to get rid of it -->
