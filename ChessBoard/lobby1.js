@@ -252,11 +252,11 @@ document.addEventListener('keydown', function(event) {
     });
 
 
-// Press R to show pieces as a backup instead of a button you hvae to press
+// Press R to refresh as well
 document.addEventListener('keydown', function(event) {
         if (event.key === 'r') {
-            displayPieces()
-            
+            window.location.reload();
+
         }
     });
 
@@ -337,5 +337,5 @@ function drawBoard(){
 
 //Reloads the page every 10 seconds to check if the opponent moved
 setInterval(function() {
-  window.location.reload();
+    window.location.reload();
 }, 10000);

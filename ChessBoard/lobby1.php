@@ -72,7 +72,7 @@ $jsonBoard= json_encode($sqlresult);
     </form>
     <!-- I don't know what jsBoard is, but I kept it -->
     <script>   var jsBoard = <?php echo $jsonBoard; ?>;  </script>
-    <script src = "lobby.js"></script>
+    <script src = "lobby1.js"></script>
 
 </body>
 </html>

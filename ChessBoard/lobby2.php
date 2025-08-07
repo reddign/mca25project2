@@ -68,7 +68,7 @@ $jsonBoard= json_encode($sqlresult);
     </form>
 
     <!-- <script>   var jsBoard = <?php echo $jsonBoard; ?>;  </script> -->
-    <script src = "lobby.js"></script>
+    <script src = "lobby2.js"></script>
 
 </body>
 </html>
