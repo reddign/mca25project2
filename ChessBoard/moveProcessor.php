@@ -35,10 +35,10 @@ $isTheMoveLegal=mover($currentBoardState,$playerMove);
 
 if ($isTheMoveLegal) {
     //update board
-    header("updateBoard.php");
+    header("location: updateBoard.php");
 } else {
 //send them back to where they came from
-header("location: {'$lobbyNumber'}.php");
+header("location: $lobbyNumber.php");
 }
 
 function mover($currentBoardState,$playersMove) {
