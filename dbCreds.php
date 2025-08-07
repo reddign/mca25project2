@@ -6,7 +6,7 @@
     $password = "Mu4[XM@[D6&d";
     $database = "u121755072_chessdb";
 
-    //Use line 
-    // require "../dbcreds.php"; 
-    //To access this code snippet.
+    // Use line
+    // require "../dbcreds.php";
+    // To access this code snippet.
 ?>
