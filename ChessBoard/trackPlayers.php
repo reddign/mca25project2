@@ -10,7 +10,7 @@ $sql = "select turn from {$_SESSION['game']}";
 //Send SQL and get results
 $result = $mysqli -> query($sql);
 $sqlresult = $result -> fetch_all(MYSQLI_ASSOC);
-$complete = false
+//$complete = false
 
 switch($sqlresult[1]){
     case null:
