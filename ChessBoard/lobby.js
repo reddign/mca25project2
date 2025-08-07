@@ -34,6 +34,74 @@ let currentBoardState = jsBoard;
 let currentDrawPiece = wPawnImg
 
 
+wPawnImg.onload = function() {
+    img1 = true;
+    checkIfImagesLoaded();
+};
+
+bPawnImg.onload = function() {
+    img2 = true;
+    checkIfImagesLoaded();
+};
+
+wKnightImg.onload = function() {
+    img3 = true;
+    checkIfImagesLoaded();
+};
+
+bKnightImg.onload = function() {
+    img4 = true;
+    checkIfImagesLoaded();
+};
+
+wBishopImg.onload = function() {
+    img5 = true;
+    checkIfImagesLoaded();
+};
+
+bBishopImg.onload = function() {
+    img6 = true;
+    checkIfImagesLoaded();
+};
+
+wRookImg.onload = function() {
+    img7 = true;
+    checkIfImagesLoaded();
+};
+
+bRookImg.onload = function() {
+    img8 = true;
+    checkIfImagesLoaded();
+};
+
+wQueenImg.onload = function() {
+    img9 = true;
+    checkIfImagesLoaded();
+};
+
+bQueenImg.onload = function() {
+    img10 = true;
+    checkIfImagesLoaded();
+};
+
+wKingImg.onload = function() {
+    img11 = true;
+    checkIfImagesLoaded();
+};
+
+bKingImg.onload = function() {
+    img12 = true;
+    checkIfImagesLoaded();
+};
+
+
+function checkIfImagesLoaded(){
+
+    if (img1 && img2 && img3 && img4 && img5 && img6 && img7 && img8 && img9 && img10 && img11 && img12){
+        displayPieces()
+
+    }
+}
 
 
 
