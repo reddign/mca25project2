@@ -3,8 +3,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
-        
     </head>
+<!-- I think you can re-add the header php here Nathan -->
     <link href="style.css" rel="stylesheet">
     <body>
         <div class="container">
