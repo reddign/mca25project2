@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+require "../dbCreds.php";
 
 $mysqli = new mysqli($servername,$username,$password,$database);
 
