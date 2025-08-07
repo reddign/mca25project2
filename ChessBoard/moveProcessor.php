@@ -159,7 +159,7 @@ function blackPawn($currentBoardState,$X,$Y,$endX,$endY) {
         if(($currentBoardState[$X-1][$Y] == "0")&&($currentBoardState[$X-2][$Y] == "0")&&($X==6)&&($endX==($X-2))){
                 return true;}
         } 
-    if (($currentBoardState[$X-1][$Y] == "0")&&($endX==($X-1))) {
+    if (($currentBoardState[$X-1][$Y] == "0")&&($endX==($X-1))&&$Y==$endY) {
         return true;
     }
     //These if statements will check captures. (I wont have time to add enpassant unless I have extra time)
