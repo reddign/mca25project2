@@ -68,7 +68,7 @@ function mover($currentBoardState,$playersMove) {
     $legalMove = king($currentBoardState,$initialX,$initialY,$endX,$endY,$team);
     }
 
-    displayinator($initialY,$initialX,$endY,$endX,$pieceType,$team,$playersMove,$legalMove);}
+    }
     else {
         $legalMove=false;
     }
