@@ -13,6 +13,15 @@ $_SESSION["lobby"] = "lobby1";
     
 </head>
 <body>
+    <style>
+            body {
+                background-image: url('../chessImages/wood.jpg'); 
+                background-repeat: no-repeat; 
+                background-size: cover; 
+                background-position: center; 
+                background-attachment: fixed; 
+            }
+        </style>
     <p2>    
         <!-- I had to get rid of move processor being called here. I don't think it was neccessary -->
     <?php
