@@ -18,7 +18,7 @@
     <h2>Welcome to our chess website. Click on one of the five chess pieces above to join a lobby! (Max 2 players per lobby)</h2>
 
 
-<!-- add the 5 lobbies' buttons !-->
+
 <?php
     session_start();
     if($_SESSION["LoggedIn"] != "YES"){
@@ -28,6 +28,4 @@
 
     }
     ?>
-
-
-<br><br><br><br><br><br>        
+</body>
