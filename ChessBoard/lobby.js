@@ -252,6 +252,15 @@ document.addEventListener('keydown', function(event) {
     });
 
 
+// Press R to show pieces as a backup instead of a button you hvae to press
+document.addEventListener('keydown', function(event) {
+        if (event.key === 'r') {
+            displayPieces()
+            
+        }
+    });
+
+
 function getChessCoordinates(x, y){
     if(x<=60){
         columnLetter = ["a",0]
