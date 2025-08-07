@@ -5,7 +5,43 @@
 
 //username - store in the table uder turn id 2 if white or turn id 3 if black
 
+require "../dbcreds.php";
 
+if(){
+    echo "<script>
+        alert('The lobby is empty.');
+        let joinLobby1 = prompt('Do you wish to continue? Please respond with y or n.');
+
+        if(joinLobby1 = y || Y || yes || Yes){
+            continue();
+        }else{
+            exit;    
+        }
+
+        function continue(){
+            
+        }
+    </script>";
+}else if(){
+    echo "<script>
+        let joinLobby2 = prompt('There is one player waiting. Do you wish to join? Please respond with y or n.');
+
+        if(joinLobby1 = y || Y || yes || Yes){
+            continue();
+        }else{
+            exit;    
+        }
+
+        function continue(){
+            
+        }
+    </script>";
+}else{
+    echo "<script>
+        alert('Sorry, the lobby is full. Please try another lobby.')
+        exit;
+    </script>";
+}
 
 
 
