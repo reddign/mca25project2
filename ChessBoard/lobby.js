@@ -323,3 +323,10 @@ function drawBoard(){
         }
     }
 }
+
+
+
+//Reloads the page every 10 seconds to check if the opponent moved
+setInterval(function() {
+  window.location.reload();
+}, 10000);
