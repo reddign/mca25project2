@@ -30,9 +30,4 @@
     ?>
 
 
-<br><br><br><br><br><br>
-    <table>
-        <h1>Leaderboard</h1>
-            <tr><th>Username</th><th>Wins</th></tr>
-           
-            
+<br><br><br><br><br><br>        
