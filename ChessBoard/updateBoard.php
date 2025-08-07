@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "../dbCreds.php";
 
 $chessGame = $_SESSION["game"];//Pull current chess game lobby
