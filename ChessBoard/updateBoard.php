@@ -22,4 +22,5 @@ $result=$mysqli -> query($sql);
 print_r($sql);
 
 //TODO: redirect user back to chess board
+header("location: {$_SESSION['lobby']}.php");
 ?>
