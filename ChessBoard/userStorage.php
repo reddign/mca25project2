@@ -7,7 +7,7 @@
 
 require "../dbcreds.php";
 
-if(){
+if(__){ //IF there are no players in the lobby
     echo "<script>
         alert('The lobby is empty.');
         let joinLobby1 = prompt('Do you wish to continue? Please respond with y or n.');
@@ -22,7 +22,7 @@ if(){
             
         }
     </script>";
-}else if(){
+}else if(__){ //IF there is one player in the lobby
     echo "<script>
         let joinLobby2 = prompt('There is one player waiting. Do you wish to join? Please respond with y or n.');
 
@@ -36,7 +36,7 @@ if(){
             
         }
     </script>";
-}else{
+}else{ //Lobby should already have 2 players.
     echo "<script>
         alert('Sorry, the lobby is full. Please try another lobby.')
         exit;
