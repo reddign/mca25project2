@@ -49,7 +49,7 @@ $_SESSION["lobby"] = "lobby5";
 
 <?php
 require "../dbCreds.php";
-require "trackPlayer.php";
+require "trackPlayers.php";
 
 $mysqli = new mysqli($servername,$username,$password,$database);
 
