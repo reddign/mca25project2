@@ -54,8 +54,7 @@ $jsonBoard= json_encode($sqlresult);
     <img style="height: 0px" src="../chessImages/wKing.png" id="whiteKing">
     <img style="height: 0px" src="../chessImages/bKing.png" id="blackKing">
 
-    <!-- why is lobby.js ran multiple times? -->
-    <script src = "lobby.js"></script>
+
     <!-- a script called sendHere was being called as the action in one of the versions. I chose to get rid of it -->
     <form id="myForm" action="moveProcessor.php" method="post">
         <input type="hidden" id="jsVar1" name="startPos">
