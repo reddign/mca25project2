@@ -17,6 +17,7 @@ $var1 = $_POST['startPos'];
 $var2 = $_POST['endPos'];
 $_SESSION['startPosition'] = $var1;
 $_SESSION['endPosition'] = $var2;
+$databaseNumber = $_SESSION['game'];
 $lobbyNumber = $_SESSION['lobby'];
 $playerMove = [$var1,$var2];
 // $playerMove = ["b1","c3"];
@@ -25,8 +26,11 @@ $isTheMoveLegal=mover($currentBoardState,$playerMove);
 
 if ($isTheMoveLegal) {
     //update board
-}
+    header("updateBoard.php");
+} else {
 //send them back to where they came from
+header("location: {'$lobbyNumber'}.php");
+}
 
 function mover($currentBoardState,$playersMove) {
     $initialY = substr($playersMove[0],0,1);
