@@ -1,7 +1,7 @@
 <?php
 require "../dbCreds.php";
 
-$chessGame = $_SESSION["lobby"];//Pull current chess game lobby
+$chessGame = $_SESSION["game"];//Pull current chess game lobby
 $piecePosition = $_SESSION["startPosition"];//Get the position of the current piece
 $requestPosition = $_SESSION["endPosition"];//Get the position of the requested move (both the above will be entered as like a2)
 $pieceCol = substr($piecePosition,0,1);

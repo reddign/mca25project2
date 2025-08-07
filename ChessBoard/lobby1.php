@@ -1,6 +1,7 @@
 <?php
 session_start();
-$_SESSION["lobby"] = "chessGame1";
+$_SESSION["game"] = "chessGame1";
+$_SESSION["lobby"] = "lobby1";
 ?>
 <?php
 require "dbCreds.php";

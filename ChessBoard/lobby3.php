@@ -1,6 +1,7 @@
 <?php
 session_start();
-$_SESSION["lobby"] = "chessGame3";
+$_SESSION["game"] = "chessGame3";
+$_SESSION["lobby"] = "lobby3";
 ?>
 <html lang="en">
 <head>
