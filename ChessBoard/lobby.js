@@ -37,61 +37,84 @@ let currentDrawPiece = wPawnImg
 wPawnImg.onload = function() {
     img1 = true;
     checkIfImagesLoaded();
+    console.log("Image1 loaded")
 };
 
 bPawnImg.onload = function() {
     img2 = true;
     checkIfImagesLoaded();
+    console.log("Image2 loaded")
+
 };
 
 wKnightImg.onload = function() {
     img3 = true;
     checkIfImagesLoaded();
+    console.log("Image3 loaded")
+
 };
 
 bKnightImg.onload = function() {
     img4 = true;
     checkIfImagesLoaded();
+    console.log("Image4 loaded")
+
 };
 
 wBishopImg.onload = function() {
     img5 = true;
     checkIfImagesLoaded();
+    console.log("Image5 loaded")
+
 };
 
 bBishopImg.onload = function() {
     img6 = true;
     checkIfImagesLoaded();
+    console.log("Image6 loaded")
+
 };
 
 wRookImg.onload = function() {
     img7 = true;
     checkIfImagesLoaded();
+    console.log("Image7 loaded")
+
 };
 
 bRookImg.onload = function() {
     img8 = true;
     checkIfImagesLoaded();
+    console.log("Image8 loaded")
+
 };
 
 wQueenImg.onload = function() {
     img9 = true;
     checkIfImagesLoaded();
+    console.log("Image9 loaded")
+
 };
 
 bQueenImg.onload = function() {
     img10 = true;
     checkIfImagesLoaded();
+    console.log("Image10 loaded")
+
 };
 
 wKingImg.onload = function() {
     img11 = true;
     checkIfImagesLoaded();
+    console.log("Image11 loaded")
+
 };
 
 bKingImg.onload = function() {
     img12 = true;
     checkIfImagesLoaded();
+    console.log("Image12 loaded")
+
 };
 
 
