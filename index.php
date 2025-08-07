@@ -36,18 +36,3 @@
             <tr><th>Username</th><th>Wins</th></tr>
            
             
-<?php
-require "dbCreds.php";                    
-$mysqli = new mysqli($servername,$username,$password,$database);
-               //make a SQL message
-$sql = "select userid,score FROM scores
-JOIN users on (username=scores.userid);";
-
-$result = $mysqli -> query($sql);
-$rows = $result -> fetch_all(MYSQLI_ASSOC);
-
-
-foreach($rows as $row){
-    print("<tr><td>{$row['username']}</td><td>{$row['score']}</td></tr>");            
-}
-?>
