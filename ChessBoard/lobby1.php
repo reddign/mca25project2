@@ -49,9 +49,10 @@ $_SESSION["lobby"] = "lobby1";
     <img style="height: 0px" src="../chessImages/wKing.png" id="whiteKing" loading="lazy">
     <img style="height: 0px" src="../chessImages/bKing.png" id="blackKing" loading="lazy">
 
-    
+
 <?php
 require "../dbCreds.php";
+require "trackPlayer.php";
 
 $mysqli = new mysqli($servername,$username,$password,$database);
 
