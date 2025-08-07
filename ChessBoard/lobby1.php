@@ -35,7 +35,6 @@ $_SESSION["lobby"] = "lobby1";
     ></canvas>
 
     <br>
-    <button onclick="displayPieces(event)">Start Game</button>
     <img style="height: 0px" src="../chessImages/wPawn.png" id="whitePawn" loading="lazy">
     <img style="height: 0px" src="../chessImages/bPawn.png" id="blackPawn" loading="lazy">
     <img style="height: 0px" src="../chessImages/wBishop.png" id="whiteBishop" loading="lazy">

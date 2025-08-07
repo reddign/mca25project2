@@ -3,19 +3,7 @@ session_start();
 $_SESSION["game"] = "chessGame2";
 $_SESSION["lobby"] = "lobby2";
 ?>
-<?php
-require "../dbCreds.php";
 
-$mysqli = new mysqli($servername,$username,$password,$database);
-
-$sqlboard = "select a as '0',b as '1',c as '2',d as '3',e as '4',f as '5',g as '6',h as '7' from {$_SESSION['game']};";
-
-//Send SQL and get results
-$result = $mysqli -> query($sqlboard);
-$sqlresult = $result -> fetch_all(MYSQLI_ASSOC);
-
-$jsonBoard= json_encode($sqlresult);
-?>
 
 <html lang="en">
 <head>
@@ -37,7 +25,6 @@ $jsonBoard= json_encode($sqlresult);
     ></canvas>
 
     <br>
-    <button onclick="displayPieces(event)">Start Game</button>
     <img style="height: 0px" src="../chessImages/wPawn.png" id="whitePawn">
     <img style="height: 0px" src="../chessImages/bPawn.png" id="blackPawn">
     <img style="height: 0px" src="../chessImages/wBishop.png" id="whiteBishop">
@@ -51,7 +38,20 @@ $jsonBoard= json_encode($sqlresult);
     <img style="height: 0px" src="../chessImages/wKing.png" id="whiteKing">
     <img style="height: 0px" src="../chessImages/bKing.png" id="blackKing">
 
+<?php
+require "../dbCreds.php";
+require "trackPlayer.php";
 
+$mysqli = new mysqli($servername,$username,$password,$database);
+
+$sqlboard = "select a as '0',b as '1',c as '2',d as '3',e as '4',f as '5',g as '6',h as '7' from {$_SESSION['game']};";
+
+//Send SQL and get results
+$result = $mysqli -> query($sqlboard);
+$sqlresult = $result -> fetch_all(MYSQLI_ASSOC);
+
+$jsonBoard= json_encode($sqlresult);
+?>
 
     <form id="myForm" action="moveProcessor.php" method="post">
         <input type="hidden" id="jsVar1" name="startPos">
