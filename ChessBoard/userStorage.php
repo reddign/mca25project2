@@ -21,7 +21,6 @@ if($players = NULL || 0){ //If there are no players in the lobby
 
         if(joinLobby1 = y || Y || yes || Yes){
             window.location.href = 'https://chess.etownmca.com/ChessBoard/lobby1.php';
-
         }else{
             window.location.href = 'https://chess.etownmca.com/index.php';
         }
@@ -30,7 +29,7 @@ if($players = NULL || 0){ //If there are no players in the lobby
     echo "<script>
         let joinLobby2 = prompt('There is one player waiting. Do you wish to join? Please respond with y or n.');
 
-        if(joinLobby1 = y || Y || yes || Yes){
+        if(joinLobby2 = y || Y || yes || Yes){
             window.location.href = 'https://chess.etownmca.com/ChessBoard/lobby1.php';
         }else{
             window.location.href = 'https://chess.etownmca.com/index.php';
