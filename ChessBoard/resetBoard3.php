@@ -1,8 +1,5 @@
 <?php
 
-session_start()
-
-
 require "../dbCreds.php";
 
 $mysqli = new mysqli($servername,$username,$password,$database);
@@ -84,5 +81,5 @@ $result = $mysqli -> multi_query($sqlreset);
 
 
 
-header("location: {$_SESSION['lobby']}.php");
+header("location: lobby3.php");
 ?>
