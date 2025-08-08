@@ -6,8 +6,24 @@
 //username - store in the table uder turn id 2 if white or turn id 3 if black
 
 require "../dbcreds.php";
+$mysqli = new mysqli($servername,$username,$password,$database);
 
-if(__){ //IF there are no players in the lobby
+mysql_query("Update chessGame1 SET 'players' = 'players'+1 WHERE id='1';");
+$sql = mysql_query("SELECT * FROM chessGame1 WHERE id='1';");
+while($row = mysql_fetch_array($sql)){
+    $id = $row["id"];
+    $players = $row["players"];
+}
+
+function continue(){
+    header("location:lobby1.php");
+}
+
+function home(){
+    header("location:../index.php");
+}
+
+if($players = NULL){ //If there are no players in the lobby
     echo "<script>
         alert('The lobby is empty.');
         let joinLobby1 = prompt('Do you wish to continue? Please respond with y or n.');
@@ -17,12 +33,8 @@ if(__){ //IF there are no players in the lobby
         }else{
             exit;    
         }
-
-        function continue(){
-            
-        }
     </script>";
-}else if(__){ //IF there is one player in the lobby
+}else if($players = 1){ //If there is one player in the lobby
     echo "<script>
         let joinLobby2 = prompt('There is one player waiting. Do you wish to join? Please respond with y or n.');
 
@@ -30,10 +42,6 @@ if(__){ //IF there are no players in the lobby
             continue();
         }else{
             exit;    
-        }
-
-        function continue(){
-            
         }
     </script>";
 }else{ //Lobby should already have 2 players.

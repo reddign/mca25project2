@@ -52,7 +52,7 @@ function signUp(event){
             alert("Please enter a vaild password.");
     }else{
         signUpForm.submit();
-        // Sumbits to a PHP form
+        // Submits to a PHP form
     }
 }
                 </script>
