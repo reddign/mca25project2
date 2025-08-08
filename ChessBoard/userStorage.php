@@ -7,9 +7,9 @@
 
 require "../dbcreds.php";
 $mysqli = new mysqli($servername,$username,$password,$database);
-mysql_query("Update chessGame1 SET 'players' = 'players'+1 WHERE id='1';");
-$sqli = mysql_query("SELECT * FROM chessGame1 WHERE id='1';");
-while($row = mysql_fetch_array($sqli)){
+mysqli_query("Update chessGame1 SET 'players' = 'players'+1 WHERE id='1';");
+$sqli = mysqli_query("SELECT * FROM chessGame1 WHERE id='1';");
+while($row = mysqli_fetch_array($sqli)){
     $id = $row["id"];
     $players = $row["players"];
 }
