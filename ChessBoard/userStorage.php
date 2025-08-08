@@ -7,7 +7,6 @@
 
 require "../dbcreds.php";
 $mysqli = new mysqli($servername,$username,$password,$database);
-//The Following lines return errors because we use sqli NOT sql
 mysql_query("Update chessGame1 SET 'players' = 'players'+1 WHERE id='1';");
 $sqli = mysql_query("SELECT * FROM chessGame1 WHERE id='1';");
 while($row = mysql_fetch_array($sqli)){
@@ -15,7 +14,7 @@ while($row = mysql_fetch_array($sqli)){
     $players = $row["players"];
 }
 
-if($players = NULL){ //If there are no players in the lobby
+if($players = NULL || 0){ //If there are no players in the lobby
     echo "<script>
         alert('The lobby is empty.');
         let joinLobby1 = prompt('Do you wish to continue? Please respond with y or n.');
