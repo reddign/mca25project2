@@ -7,14 +7,15 @@
 
 require "../dbcreds.php";
 $mysqli = new mysqli($servername,$username,$password,$database);
-
+//The Following lines return errors because we use sqli NOT sql
 mysql_query("Update chessGame1 SET 'players' = 'players'+1 WHERE id='1';");
 $sql = mysql_query("SELECT * FROM chessGame1 WHERE id='1';");
 while($row = mysql_fetch_array($sql)){
     $id = $row["id"];
     $players = $row["players"];
 }
-
+//Those afformentioned errors aren't showing up because continue is not a name for a function you can use.
+//This function name needs changed
 function continue(){
     header("location:lobby1.php");
 }
