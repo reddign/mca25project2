@@ -66,7 +66,9 @@ $jsonBoard= json_encode($sqlresult);
         <input type="hidden" id="jsVar1" name="startPos">
         <input type="hidden" id="jsVar2" name="endPos">
     </form>
-
+    <form id="myForm" action="resetBoard.php" method="post">
+        <input type="submit">Reset Chess Board</input>
+    </form>
     <script>   var jsBoard = <?php echo $jsonBoard; ?>;  </script>
     <script src = "lobby2.js"></script>
 
