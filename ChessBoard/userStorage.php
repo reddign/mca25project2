@@ -9,12 +9,14 @@ require "../dbCreds.php";
 $mysqli = new mysqli($servername,$username,$password,$database);
 mysqli_query("Update chessGame1 SET 'players' = 'players'+1 WHERE id='1';");
 $sqli = mysqli_query("SELECT * FROM chessGame1 WHERE id='1';");
+$found = false;
 while($row = mysqli_fetch_array($sqli)){
     $id = $row["id"];
     $players = $row["players"];
+    $found = true;
 }
 
-if($players = NULL || 0){ //If there are no players in the lobby
+if($found){ //If there are no players in the lobby
     echo "<script>
         alert('The lobby is empty.');
         let joinLobby1 = prompt('Do you wish to continue? Please respond with y or n.');
@@ -41,18 +43,4 @@ if($players = NULL || 0){ //If there are no players in the lobby
         window.location.href = 'https://chess.etownmca.com/index.php';
     </script>";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
