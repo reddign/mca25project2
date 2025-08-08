@@ -19,47 +19,27 @@ if($players = NULL || 0){ //If there are no players in the lobby
         alert('The lobby is empty.');
         let joinLobby1 = prompt('Do you wish to continue? Please respond with y or n.');
 
-        function redirectToPage(https://chess.etownmca.com/ChessBoard/lobby1.php){
-            window.location.href = https://chess.etownmca.com/ChessBoard/lobby1.php;
-        }
-
-        function redirectToHome(https://chess.etownmca.com/index.php){
-            window.location.href = https://chess.etownmca.com/index.php;
-        }
-
         if(joinLobby1 = y || Y || yes || Yes){
-            redirectToPage(https://chess.etownmca.com/ChessBoard/lobby1.php);
+            window.location.href = 'https://chess.etownmca.com/ChessBoard/lobby1.php';
+
         }else{
-            redirectToHome(https://chess.etownmca.com/index.php);
+            window.location.href = 'https://chess.etownmca.com/index.php';
         }
     </script>";
 }else if($players = 1){ //If there is one player in the lobby
     echo "<script>
         let joinLobby2 = prompt('There is one player waiting. Do you wish to join? Please respond with y or n.');
 
-        function redirectToPage(https://chess.etownmca.com/ChessBoard/lobby1.php){
-            window.location.href = https://chess.etownmca.com/ChessBoard/lobby1.php;
-        }
-
-        function redirectToHome(https://chess.etownmca.com/index.php){
-            window.location.href = https://chess.etownmca.com/index.php;
-        }
-
         if(joinLobby1 = y || Y || yes || Yes){
-            redirectToPage(https://chess.etownmca.com/ChessBoard/lobby1.php);
+            window.location.href = 'https://chess.etownmca.com/ChessBoard/lobby1.php';
         }else{
-            redirectToHome(https://chess.etownmca.com/index.php);
+            window.location.href = 'https://chess.etownmca.com/index.php';
         }
     </script>";
 }else{ //Lobby should already have 2 players.
     echo "<script>
         alert('Sorry, the lobby is full. Please try another lobby.')
-
-        function redirectToHome(https://chess.etownmca.com/index.php){
-            window.location.href = https://chess.etownmca.com/index.php;
-        }
-        
-        redirectToHome(https://chess.etownmca.com/index.php);
+        window.location.href = 'https://chess.etownmca.com/index.php';
     </script>";
 }
 
