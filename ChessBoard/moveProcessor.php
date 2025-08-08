@@ -134,13 +134,14 @@ function whatPieceWeMoving($currentBoardState,$X,$Y) {
 
 function whitePawn($currentBoardState,$X,$Y,$endX,$endY) {
     //these 2 if statements check the forwards moves. NOT captures.
-    if($X==1)
-        {
-        if(($currentBoardState[$X+1][$Y] == "0")&&($currentBoardState[$X+2][$Y] == "0")&&$Y==$endY&&($endX==($X+2))){
+    if($Y==$endY)
+    {
+        if(($currentBoardState[$X+1][$Y] == "0")&&($currentBoardState[$X+2][$Y] == "0")&&($endX==($X+2))&&($X==1)){
                 return true;}
-        } 
-    if (($currentBoardState[$X+1][$Y] == "0")&&($endX==($X+1) && $Y==$endY)) {
+        
+    if (($currentBoardState[$X+1][$Y] == "0")&&($endX==($X+1))) {
         return true;
+    }
     }
     //These if statements will check captures. (I wont have enpassant unless I have extra time)
     $teamOfPiece1 = substr($currentBoardState[$X+1][$Y-1],0,1);
@@ -149,25 +150,26 @@ function whitePawn($currentBoardState,$X,$Y,$endX,$endY) {
         return true;
     } else if  (($currentBoardState[$X+1][$Y+1] != "0")&&(($Y+1)==$endY)&&($endX==($X+1))&& $teamOfPiece1=="b"){
         return true;
+        }
     }
-}
 
 function blackPawn($currentBoardState,$X,$Y,$endX,$endY) {
     //these 2 if statements check the forwards moves. NOT captures.
     if($Y==$endY)
-        {
+    {
         if(($currentBoardState[$X-1][$Y] == "0")&&($currentBoardState[$X-2][$Y] == "0")&&($X==6)&&($endX==($X-2))){
                 return true;}
-        } 
-    if (($currentBoardState[$X-1][$Y] == "0")&&($endX==($X-1))&&$Y==$endY) {
+         
+    if (($currentBoardState[$X-1][$Y] == "0")&&($endX==($X-1))) {
         return true;
+    }
     }
     //These if statements will check captures. (I wont have time to add enpassant unless I have extra time)
     $teamOfPiece1 = substr($currentBoardState[$X-1][$Y-1],0,1);
     $teamOfPiece2 = substr($currentBoardState[$X-1][$Y+1],0,1);
-    if  (($currentBoardState[$X-1][$Y] != "0")&&(($Y-1)==$endY)&&($endX==($X-1))&& $teamOfPiece2=="w"){
+    if  (($currentBoardState[$X-1][$Y-1] != "0")&&(($Y-1)==$endY)&&($endX==($X-1))&& $teamOfPiece2=="w"){
         return true;
-    } else if  (($currentBoardState[$X-1][$Y] != "0")&&(($Y+1)==$endY)&&($endX==($X-1))&& $teamOfPiece1=="w"){
+    } else if  (($currentBoardState[$X-1][$Y+1] != "0")&&(($Y+1)==$endY)&&($endX==($X-1))&& $teamOfPiece1=="w"){
         return true;
     }
 }
