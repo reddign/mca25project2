@@ -6,7 +6,7 @@
           <a href="../Processes/logout.php" class="w3-bar-item w3-button">Log Out</a>
           <!-- Right-sided navbar links. Hide them on small screens -->
           <div class="w3-right w3-hide-small">
-            <a href="../ChessBoard/lobby1.php" class="w3-bar-item w3-button">
+            <a href="../ChessBoard/userStorage.php" class="w3-bar-item w3-button">
                 <img id="logo" src="../chessImages/lobby1.png" alt="logo" height="30px">
             </a>
             <a href="../ChessBoard/lobby2.php" class="w3-bar-item w3-button">
