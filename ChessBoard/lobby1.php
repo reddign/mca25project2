@@ -71,7 +71,7 @@ $jsonBoard= json_encode($sqlresult);
         <input type="hidden" id="jsVar2" name="endPos">
     </form>
     <form id="myForm" action="resetBoard1.php" method="post">
-        <input type="submit">Reset Chess Board</input>
+        <input type="submit">
     </form>
     <!-- I don't know what jsBoard is, but I kept it -->
     <script>   var jsBoard = <?php echo $jsonBoard; ?>;  </script>
