@@ -3,9 +3,9 @@
 //check if id 3 has anything, if it's null then put the username there. 
 //if both have something then kick the user back to the lobbies page.
 
-//username - store in the table uder turn id 2 if white or turn id 3 if black
+//username - store in the table under turn id 2 if white or turn id 3 if black
 
-require "../dbcreds.php";
+require "../dbCreds.php";
 $mysqli = new mysqli($servername,$username,$password,$database);
 mysqli_query("Update chessGame1 SET 'players' = 'players'+1 WHERE id='1';");
 $sqli = mysqli_query("SELECT * FROM chessGame1 WHERE id='1';");
